@@ -68,7 +68,6 @@ void Game::inputPhase()
              switch(event.key.code)
              {
                  case sf::Keyboard::N:
-                     std::cout << "N was pressed" << std::endl;
                      newGame();
                      break;
                  case sf::Keyboard::Escape:
@@ -119,7 +118,7 @@ void Game::inputPhase()
                                      std::cout << "Same card was can not be choosen1!" << std::endl;
                                  }
                                  break;
-                             case 2:
+                             case NUM_SELECTED_CARDS_MAX :
                                  if(i != indexSelectedCard1_ && i != indexSelectedCard2_)
                                  {
                                      numSelectedCards_ = 0;

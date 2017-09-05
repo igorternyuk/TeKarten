@@ -44,8 +44,6 @@ private:
     sf::Sprite spriteCards_;
     sf::Texture textureCards_;
     sf::Font font_;
-    sf::Clock clock_;
-    sf::Time tempClock_;
     std::vector<Card> cards_;
     std::random_device rd;
     std::mt19937 mt{rd()};
